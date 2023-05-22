@@ -33,13 +33,13 @@ pip install -U pytest
 
 - [pytestのインストール方法【Pythonライブラリ】｜資格マフィア](https://shikaku-mafia.com/pytest-install/)
 
-管理者権限でインストールする。<b>
+管理者権限でインストールする。<br>
 →うまく行った。これで更新する。
 
 ## pandasの追加
-　pythonでのデータ分析ではpandasが便利だそうだ。そのため一応追加しておく。
+pythonでのデータ分析ではpandasが便利だそうだ。そのため一応追加しておく。
 
 1. [pandas · PyPI](https://pypi.org/project/pandas/)
-2. [pandas documentation — pandas 2.0.1 documentation](https://pandas.pydata.org/pandas-docs/stable/)
+1. [pandas documentation — pandas 2.0.1 documentation](https://pandas.pydata.org/pandas-docs/stable/)
 
-　また、依存関係の関係で`lxml`と`html5lib`を追加する。
+また、依存関係の関係で`lxml`と`html5lib`を追加する。
