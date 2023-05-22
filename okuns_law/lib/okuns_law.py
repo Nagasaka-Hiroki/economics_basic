@@ -1,14 +1,15 @@
 #事前にファイルをダウンロードする。
-#ダウンロードパスとファイル名は以下。
+#ファイル名は以下。
 #../data/h11_data04.html
 #../data/h11_data04.html
 
 #pandasで表を取得してデータを取り出す。
+#取り出したデータをnumpyを使って計算していく
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-#メイン関数
+#main関数
 def main():
     #ファイルから表を取り込む。
     with open('../data/h11_data01.html') as f:
@@ -65,7 +66,7 @@ def main():
     plt.legend()
     plt.show() #グラフを描画する。
     corel=np.corrcoef(gdp_growth_rate[1],unemployment_rate[2])
-    #相関係数行列は対象行列。xとyの相関を知りたければ、対角成分以外を取り出せば良い。
+    #相関係数行列は対称行列。xとyの相関を知りたければ、対角成分以外を取り出せば良い。
     print(corel[0][1])
 
 #main関数を実行する。
