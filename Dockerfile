@@ -26,7 +26,9 @@ RUN pip install --upgrade pip \
 
 #追加のライブラリ。
 RUN pip install -U beautifulsoup4 \
- && pip install -U pandas
+ && pip install -U pandas \
+ && pip install -U lxml \
+ && pip install -U html5lib
 
 #ユーザを切り替える。
 USER ${USER_NAME}

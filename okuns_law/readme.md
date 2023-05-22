@@ -11,7 +11,8 @@
 上記のページはhtmlで作成されている。そのため、スクレイピングではなく、一度ダウンロードして作業したほうが良いと思う。以下のコマンドを実行する。
 
 ```bash
-curl https://www5.cao.go.jp/j-j/wp/wp-je22/h11_data01.html > ./data/h11_data01.html
+curl https://www5.cao.go.jp/j-j/wp/wp-je22/h11_data01.html > ./data/h11_data01.html #国民経済計算
+curl https://www5.cao.go.jp/j-j/wp/wp-je22/h11_data04.html > ./data/h11_data04.html #人口・雇用
 ```
 
 ディレクトリにダウンロードして直接参照して計算する。（これでサーバーに負担を多くかけないで済む）<br>

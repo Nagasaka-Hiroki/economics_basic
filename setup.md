@@ -42,3 +42,4 @@ pip install -U pytest
 1. [pandas · PyPI](https://pypi.org/project/pandas/)
 2. [pandas documentation — pandas 2.0.1 documentation](https://pandas.pydata.org/pandas-docs/stable/)
 
+　また、依存関係の関係で`lxml`と`html5lib`を追加する。
