@@ -18,15 +18,15 @@ RUN groupadd -g ${GROUP_ID} ${GROUP_NAME} \
 RUN apt-get update && apt-get upgrade -y \
  && apt-get install python3-tk tk-dev -y
 
-#ユーザを切り替える。
-USER ${USER_NAME}
-
 #外部ライブラリをインストールする。
 RUN pip install --upgrade pip \
- && pip install numpy \
- && pip install matplotlib \
- && pip install beautifulsoup4 \
- && pip install pytest
+ && pip install -U numpy \
+ && pip install -U matplotlib \
+ && pip install -U beautifulsoup4 \
+ && pip install -U pytest
+
+#ユーザを切り替える。
+USER ${USER_NAME}
 
 #プロンプトの色を有効にする。
 RUN sed -i -e 's/#force_color_prompt=yes/force_color_prompt=yes/g' ~/.bashrc
