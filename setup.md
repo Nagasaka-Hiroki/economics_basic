@@ -35,3 +35,10 @@ pip install -U pytest
 
 管理者権限でインストールする。<b>
 →うまく行った。これで更新する。
+
+## pandasの追加
+　pythonでのデータ分析ではpandasが便利だそうだ。そのため一応追加しておく。
+
+1. [pandas · PyPI](https://pypi.org/project/pandas/)
+2. [pandas documentation — pandas 2.0.1 documentation](https://pandas.pydata.org/pandas-docs/stable/)
+

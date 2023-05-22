@@ -22,8 +22,11 @@ RUN apt-get update && apt-get upgrade -y \
 RUN pip install --upgrade pip \
  && pip install -U numpy \
  && pip install -U matplotlib \
- && pip install -U beautifulsoup4 \
  && pip install -U pytest
+
+#追加のライブラリ。
+RUN pip install -U beautifulsoup4 \
+ && pip install -U pandas
 
 #ユーザを切り替える。
 USER ${USER_NAME}
