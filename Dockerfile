@@ -16,7 +16,7 @@ RUN groupadd -g ${GROUP_ID} ${GROUP_NAME} \
 
 #GUI環境を有効にするためのツールをインストールする。
 RUN apt-get update && apt-get upgrade -y \
- && apt-get install python3-tk tk-dev -y
+ && apt-get install python3-tk tk-dev curl -y
 
 #外部ライブラリをインストールする。
 RUN pip install --upgrade pip \
