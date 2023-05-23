@@ -18,6 +18,7 @@ curl https://www5.cao.go.jp/j-j/wp/wp-je22/h11_data05.html > ./data/h11_data05.h
 　ディレクトリはそれぞれ以下を表す。
 
 |ディレクトリ名|内容|
+|-|-|
 |`./lib`|プログラム本体|
 |`./data`|ダウンロードしたデータ|
 
